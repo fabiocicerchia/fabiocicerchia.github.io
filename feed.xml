@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fabio Cicerchia</title>
+    <description>Italian 28yo Passionate Developer, currently based in London, with 10+ years of experience in web applications and web portals.Focused on software performance and maintainability.What else? Coffee (espresso, please) drinker, sandwich eater, sushi addicted, pasta lover.</description>
+    <link>http://blog.fabiocicerchia.it/</link>
+    <atom:link href="http://blog.fabiocicerchia.it/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 24 Jul 2014 07:39:18 +0100</pubDate>
+    <lastBuildDate>Thu, 24 Jul 2014 07:39:18 +0100</lastBuildDate>
+    <generator>Jekyll v2.1.1</generator>
+    
+      <item>
+        <title>Versioning Numbers: Let &#39;em be semantic</title>
+        <description>&lt;p&gt;The version number is most of the time underestimated. It is used to give a
+chronological order to the software releases and it conveys the useful
+information about the state and the impact of the release.&lt;/p&gt;
+
+&lt;p&gt;There are several way to version a release:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;MAJOR.MINOR[.BUILD[.REVISION]]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;MAJOR.MINOR.PATCH[-STABILITY]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;CURRENT.REVISION.AGE&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;YEAR.MONTH&lt;/code&gt;, see &lt;a href=&quot;http://en.wikipedia.org/wiki/List_of_Ubuntu_releases&quot;&gt;Ubuntu&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;ID&lt;/code&gt;, see &lt;a href=&quot;&quot;&gt;Windows&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Personally I prefer the following structure:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;MAJOR.MINOR.PATCH[-STABILITY]&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;And apparently there is even a &lt;a href=&quot;http://semver.org/&quot;&gt;manifesto&lt;/a&gt; for this
+versioning type.&lt;/p&gt;
+
+&lt;p&gt;The rules are quite straight-forward:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;increase &lt;code&gt;MAJOR&lt;/code&gt; when releasing something that is NOT backward compatible&lt;/li&gt;
+  &lt;li&gt;increase &lt;code&gt;MINOR&lt;/code&gt; when releasing something that is backward compatible&lt;/li&gt;
+  &lt;li&gt;increase &lt;code&gt;PATCH&lt;/code&gt; when releasing a bug fix (obvs backward compatible)&lt;/li&gt;
+  &lt;li&gt;the stability follows this order:
+    &lt;ol&gt;
+      &lt;li&gt;&lt;code&gt;alpha&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;beta&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;dev&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code&gt;rc&lt;/code&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Usually I never bother to use &lt;code&gt;alpha&lt;/code&gt; and &lt;code&gt;beta&lt;/code&gt; because they are so unstable
+and so frequently updated that it’s not worth the time to create a tag, I’d
+rather release a &lt;code&gt;dev&lt;/code&gt; one.&lt;/p&gt;
+
+&lt;p&gt;This could be a solution to avoid problems when deciding which version to use.
+This kind of confusion is on the end-user, and the end-user who cares most about
+those version numbers quite often is the developer who needs to use a certain
+library.&lt;/p&gt;
+
+&lt;p&gt;Still this doesn’t mean you can’t get confused by your own versioning number
+scheme &lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;If you use non-sequential numbers make sure it’s clear which one come first, the
+first example that I can think of could be Windows ME and Windows 2000:
+do you know which one is the most recent one?&lt;br /&gt;
+A solution could be the versioning system that Canonical is using for Ubuntu:
+&lt;code&gt;YY.MM&lt;/code&gt; (&lt;code&gt;year.month&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;We can see everything as a courtesy we can do each other to make our lives
+easier.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 22 Jul 2014 01:00:00 +0100</pubDate>
+        <link>http://blog.fabiocicerchia.it/versioning-numbers-let-em-be-semantic</link>
+        <guid isPermaLink="true">http://blog.fabiocicerchia.it/versioning-numbers-let-em-be-semantic</guid>
+        
+        <category>software</category>
+        
+        <category>semantic</category>
+        
+        <category>versioning</category>
+        
+        
+        <category>coding-standards</category>
+        
+      </item>
+    
+      <item>
+        <title>JS Events: how to get all of them</title>
+        <description>&lt;p&gt;The main problem is because of the way the browser manage the events.&lt;/p&gt;
+
+&lt;p&gt;I’ve developed this plain JS class because I was facing a huge problem while
+working on &lt;a href=&quot;http://salmonjs.org&quot;&gt;salmonJS&lt;/a&gt;. I was trying to collect all the
+events bound to the DOM elements.&lt;/p&gt;
+
+&lt;p&gt;So I started my research about it, nothing came from Google or StackOverflow.&lt;/p&gt;
+
+&lt;p&gt;This answer made me think and for a second I was about to give up on that:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Event handlers attached using DOM Level 2 Events addEventListener methods and
+IE’s attachEvent cannot currently be retrieved from script at all. DOM Level 3
+once proposed element.eventListenerList to get all listeners, but it is
+unclear whether this will make it to the final specification. There is no
+implementation in any browser today.&lt;/p&gt;
+
+  &lt;p&gt;– &lt;cite&gt;&lt;a href=&quot;http://stackoverflow.com/a/2623352/888162&quot;&gt;bobince&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are few ways to bind an event we should focus on:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.w3.org/TR/html401/interact/scripts.html#h-18.2.3&quot;&gt;&lt;code&gt;on*&lt;/code&gt;&lt;/a&gt; HTML attribute&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/en/docs/Web/API/EventTarget.addEventListener&quot;&gt;&lt;code&gt;element.addEventListener&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ie/ms536343(v=vs.85).aspx&quot;&gt;&lt;code&gt;element.attachEvent&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The last 2 are not possible to be retrieved without some workounds because they
+are handled internally by the browser and there is no trace in the DOM of those.&lt;/p&gt;
+
+&lt;p&gt;This is my personal solution to this problem, overriding the default behaviour
+at the beginning of the page load, so nothing else can try to bind an event
+before initialise the “interceptor”.&lt;/p&gt;
+
+&lt;p&gt;There is nothing to be configured to make it working, just include it in your page
+before EVERYTHING else.&lt;/p&gt;
+
+&lt;p&gt;You can collect at any time the events just calling:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;events&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;eventContainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getEvents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;script src=&quot;https://gist.github.com/fabiocicerchia/7116129.js&quot;&gt; &lt;/script&gt;
+
+</description>
+        <pubDate>Tue, 03 Dec 2013 11:23:00 +0000</pubDate>
+        <link>http://blog.fabiocicerchia.it/js-events-how-to-get-all-of-them</link>
+        <guid isPermaLink="true">http://blog.fabiocicerchia.it/js-events-how-to-get-all-of-them</guid>
+        
+        <category>javascript</category>
+        
+        <category>events</category>
+        
+        <category>dom</category>
+        
+        <category>phantomjs</category>
+        
+        <category>nodejs</category>
+        
+        
+        <category>programming</category>
+        
+      </item>
+    
+      <item>
+        <title>Browser Fingerprinting: There&#39;s no place where you can hide</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://www.eff.org/&quot;&gt;EFF&lt;/a&gt;, The Electronic Frontier Foundation, did a research
+about the users’ privacy and how it is possible to identify the user in a quite
+unique way.&lt;br /&gt;
+The concept is based on gathering as much information as possible, like user
+agent (browser and version), resolution, plugins installed, timezone, language,
+and so on to create a message digest to identify the user / user’s device in an
+accurate way.&lt;/p&gt;
+
+&lt;p&gt;This means that disabling the cookies is not enough to avoid this kind of
+identification.
+So you can still be a target of web tracking, mainly for marketing and
+commercial purposes.&lt;/p&gt;
+
+&lt;p&gt;The full article is available at “&lt;a href=&quot;https://www.eff.org/deeplinks/2010/01/primer-information-theory-and-privacy&quot;&gt;A Primer on Information Theory and Privacy&lt;/a&gt;”.&lt;/p&gt;
+
+&lt;p&gt;So fascinated by this experiment I’ve tried to create just for fun something
+similar to generate a “unique” fingerprint.&lt;/p&gt;
+
+&lt;p&gt;You can test my version on &lt;a href=&quot;http://jsfiddle.net/fabiocicerchia/P9Rd9/&quot;&gt;&lt;i class=&quot;fa fa-jsfiddle&quot;&gt;&lt;/i&gt; JSFiddle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can check the code here below:&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/fabiocicerchia/6775541.js&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;But if you only think all the information the Google has got during the years
+based on what you have done on Internet, it’s enough to track and predict your
+behaviour without too many problems.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Oct 2013 10:41:00 +0100</pubDate>
+        <link>http://blog.fabiocicerchia.it/browser-fingerprinting-there-s-no-place-where-you-can-hide</link>
+        <guid isPermaLink="true">http://blog.fabiocicerchia.it/browser-fingerprinting-there-s-no-place-where-you-can-hide</guid>
+        
+        <category>javascript</category>
+        
+        <category>browser</category>
+        
+        <category>privacy</category>
+        
+        <category>fingerprint</category>
+        
+        
+        <category>privacy</category>
+        
+      </item>
+    
+  </channel>
+</rss>
