@@ -1,18 +1,17 @@
 ---
 layout:     post
-title:      "JS Events: how to get all of them"
+title:      "Retrieve JS Events: how to get all of them"
 date:       2013-12-03 11:23:00
 categories: programming
 tags:       javascript events dom phantomjs nodejs
 comments:   true
-permalink:  js-events-how-to-get-all-of-them
+permalink:  retrieve-js-events-how-to-get-all-of-them
 ---
 
-The main problem is because of the way the browser manage the events.
-
-I've developed this plain JS class because I was facing a huge problem while
-working on [salmonJS](http://salmonjs.org). I was trying to collect all the
-events bound to the DOM elements.
+I was trying face an apparently huge problem, collect all the events bound to
+the DOM elements.  
+Then I realised that the main obstacle was the browser, yes the browser.  
+Because of the way the browser manage the events.
 
 So I started my research about it, nothing came from Google or StackOverflow.
 
@@ -33,14 +32,20 @@ There are few ways to bind an event we should focus on:
  * [`element.attachEvent`](http://msdn.microsoft.com/en-us/library/ie/ms536343(v=vs.85).aspx)
 
 The last 2 are not possible to be retrieved without some workounds because they
-are handled internally by the browser and there is no trace in the DOM of those.
+are handled internally by the browser and they don't leave any trace in the DOM.
 
-This is my personal solution to this problem, overriding the default behaviour
-at the beginning of the page load, so nothing else can try to bind an event
-before initialise the "interceptor".
+So I've developed a plain JS class because I was facing this problem while
+working on [salmonJS](http://salmonjs.org), a js-compatible web spider.
+I was working with PhantomJS (and I believe it works fine with CasperJS as
+well) and I came with this solution which seems to be the most appropriate one.
 
-There is nothing to be configured to make it working, just include it in your page
-before EVERYTHING else.
+My personal approach to that was overriding the default behaviour at the
+beginning of the page load, so nothing else can try to bind an event before
+initialise the "interceptor".
+
+
+There is nothing that needs to be configured to make it working, just include it
+in your page before EVERYTHING else.
 
 You can collect at any time the events just calling:
 

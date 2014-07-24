@@ -760,3 +760,9 @@ footer .pull-right {
     display: none;
   }
 }
+
+.footnotes:before {
+  display: block;
+  content: 'Notes';
+  font-weight: bold;
+}

@@ -8,9 +8,9 @@ comments:   true
 permalink:  browser-fingerprinting-there-s-no-place-where-you-can-hide
 ---
 
-[EFF](https://www.eff.org/), The Electronic Frontier Foundation, did a research
-about the users' privacy and how it is possible to identify the user in a quite
-unique way.  
+The [EFF](https://www.eff.org/), The Electronic Frontier Foundation, did a
+research about the users' privacy and how it is possible to identify the user in
+a quite unique way.  
 The concept is based on gathering as much information as possible, like user
 agent (browser and version), resolution, plugins installed, timezone, language,
 and so on to create a message digest to identify the user / user's device in an
