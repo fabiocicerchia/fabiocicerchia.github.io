@@ -1,0 +1,48 @@
+<footer class="site-footer">
+
+  <div class="wrap">
+    <div class="pull-left">
+      <img id="profile-pic" alt="Profile Picture" src="http://www.gravatar.com/avatar/944ea93d87f2872251a6c05a68c3d4be?s=100" height="100" width="100" />
+    </div>
+    
+    <div class="pull-right">
+      <p class="copyright">
+        &copy; {{ site.time | date: '%Y' }} Fabio Cicerchia. Licensed under
+        a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <p class="text">{{ site.description }}</p>
+      <ul class="inline">
+        <li>
+          <a href="mailto:{{ site.email }}">
+            <i class="fa fa-envelope"></i>
+            <span>{{ site.email }}</span>
+          </a>
+        </li>
+        {% if site.social.github %}<li>
+          <a href="https://github.com/{{ site.social.github }}">
+            <i class="fa fa-github"></i>
+            <span class="username">{{ site.social.github }}</span>
+          </a>
+        </li>{% endif %}
+        {% if site.social.twitter %}<li>
+          <a href="https://twitter.com/{{ site.social.twitter }}">
+            <i class="fa fa-twitter"></i>
+            <span class="username">{{ site.social.twitter }}</span>
+          </a>
+        </li>{% endif %}
+        {% if site.social.skype %}<li>
+          <a href="skype:{{ site.social.skype }}?call">
+            <i class="fa fa-skype"></i>
+            <span class="username">{{ site.social.skype }}</span>
+          </a>
+        </li>{% endif %}
+        {% if site.social.linkedin %}<li>
+          <a href="http://linkedin.com/in/{{ site.social.linkedin }}">
+            <i class="fa fa-linkedin"></i>
+            <span class="username">{{ site.social.linkedin }}</span>
+          </a>
+        </li>{% endif %}
+      </ul>
+    </div>
+  </div>
+</footer>

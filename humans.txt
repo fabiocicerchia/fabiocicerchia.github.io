@@ -1,0 +1,18 @@
+/* HUMANS RESPONSIBLE & COLOPHON */
+    Site name:   Fabio Cicerchia
+    Site URL:    http://www.fabiocicerchia.it/
+    Repository:  https://github.com/fabiocicerchia/fabiocicerchia.github.com
+
+/* TEAM */
+    Handyman:    Fabio Cicerchia
+    Contact:     info [at] fabiocicerchia.it
+    Twitter:     @fabiocicerchia
+    From:        London, United Kingdom
+
+/* SITE */
+    Last update: 2014/07/24
+    Technology:  Linux, Apache, JavaScript
+    Components:  jQuery, Jekyll
+    Standards:   HTML5, CSS3, Atom, RSS
+    Language:    English
+    Software:    c9

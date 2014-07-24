@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="post">
+  <article class="post-content">
+    <header class="post-header">
+      <h2>{{ page.title }}</h2>
+      <p class="meta">
+        <i class="fa fa-calendar"></i>
+        {{ page.date | date: "%a, %b %-d, %Y" }}
+        {% if page.author %} • {{ page.author }}{% endif %}
+        {% if page.meta %} • {{ page.meta }}{% endif %}
+        {% if page.categories %}<i class="fa fa-book"></i> <a href="/{{ page.categories }}/" title="Category archive for {{ page.categories | join: ' ' | replace: '-', ' ' }}">{{ page.categories | join: ' ' | replace: '-', ' ' }}</a>{% endif %}
+        {% if page.categories %}<i class="fa fa-tag"></i> {{ page.tags | sort | join: ', ' }}{% endif %}
+        
+        <i class="fa fa-clock-o"></i> Reading time:
+        {% capture readtime %}{{ content | number_of_words | plus: 179 | divided_by: 180 }}{% endcapture %}
+        {% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min.
+      </p>
+    </header>
+    
+    {{ content }}
+  </article>
+  
+  -
+  
+  {% include twitter.html %}
+  {% include post_pagination.html %}
+  {% include related_posts.html %}
+  {% include comments.html %}
+</div>

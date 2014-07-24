@@ -1,0 +1,46 @@
+# Site settings
+title:       Fabio Cicerchia
+email:       info@fabiocicerchia.it
+description: "Italian 28yo Passionate Developer, currently based in London, with 10+ years of experience in web applications and web portals.<br/>Focused on software performance and maintainability.<br/>What else? Coffee (espresso, please) drinker, sandwich eater, sushi addicted, pasta lover."
+keywords:    
+    - developer
+    - web
+    - php
+    - fabio
+    - cicerchia
+baseurl:     ""
+url:         "http://blog.fabiocicerchia.it"
+
+social:
+  twitter:  fabiocicerchia
+  github:   fabiocicerchia
+  skype:    fabio.cicerchia
+  linkedin: fabio.cicerchia
+
+paginate:      10
+paginate_path: "/page:num"
+
+#gems: ['jekyll-tagging']
+gems: [ jekyll-minify-html ]
+
+# Build settings
+markdown:  kramdown
+permalink: "/:title"
+
+timezone: "Europe/London"
+encoding: "UTF-8"
+
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
+    
+emoji: true
+
+minify_html: true
