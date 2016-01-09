@@ -2,35 +2,203 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fabio Cicerchia</title>
-    <description>Italian 28yo Passionate Developer, currently based in London, with 10+ years of experience in web applications and web portals.Focused on software performance and maintainability.What else? Coffee (espresso, please) drinker, sandwich eater, sushi addicted, pasta lover.</description>
+    <description>Italian 29yo Passionate Developer, currently based in London, with 10+ years of experience in web applications and web portals.Focused on software performance and maintainability.What else? Coffee (espresso, please) drinker, sandwich eater, sushi addicted, pasta lover.</description>
     <link>http://blog.fabiocicerchia.it/</link>
     <atom:link href="http://blog.fabiocicerchia.it/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 24 Jul 2014 07:39:18 +0100</pubDate>
-    <lastBuildDate>Thu, 24 Jul 2014 07:39:18 +0100</lastBuildDate>
+    <pubDate>Sat, 09 Jan 2016 07:29:03 +0000</pubDate>
+    <lastBuildDate>Sat, 09 Jan 2016 07:29:03 +0000</lastBuildDate>
     <generator>Jekyll v2.1.1</generator>
     
       <item>
-        <title>Versioning Numbers: Let &#39;em be semantic</title>
-        <description>&lt;p&gt;The version number is most of the time underestimated. It is used to give a
-chronological order to the software releases and it conveys the useful
-information about the state and the impact of the release.&lt;/p&gt;
-
-&lt;p&gt;There are several way to version a release:&lt;/p&gt;
+        <title>Being really agile, Being really smart</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;http://agilemanifesto.org/&quot;&gt;Agile Manifesto&lt;/a&gt; has the following 4 core
+values:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;MAJOR.MINOR[.BUILD[.REVISION]]&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;MAJOR.MINOR.PATCH[-STABILITY]&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;CURRENT.REVISION.AGE&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;YEAR.MONTH&lt;/code&gt;, see &lt;a href=&quot;http://en.wikipedia.org/wiki/List_of_Ubuntu_releases&quot;&gt;Ubuntu&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;ID&lt;/code&gt;, see &lt;a href=&quot;&quot;&gt;Windows&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Individuals and interactions over processes and tools&lt;/em&gt;&lt;br /&gt;
+this means &lt;strong&gt;communicate&lt;/strong&gt;, a lot.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Working software over comprehensive documentation&lt;/em&gt;&lt;br /&gt;
+if you are working on something that is &lt;strong&gt;not working properly&lt;/strong&gt; why bother
+documenting what’s doing (and maybe it’s even going to change).
+Also the customer will use / buy the software not the documentation.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Customer collaboration over contract negotiation&lt;/em&gt;&lt;br /&gt;
+the requirements cannot be collected at the beginning and &lt;strong&gt;will change&lt;/strong&gt;
+during the development cycle, so &lt;strong&gt;continuous feedback&lt;/strong&gt; is needed.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Responding to change over following a plan&lt;/em&gt;&lt;br /&gt;
+it doesn’t mean &lt;strong&gt;have no plan&lt;/strong&gt; at all, it’s just about to &lt;strong&gt;being
+flexible&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Personally I prefer the following structure:&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;http://antiagilemanifesto.com/&quot;&gt;Anti Agile Manifesto&lt;/a&gt; is telling exactly
+what the things really are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Epics are really just projects&lt;/li&gt;
+  &lt;li&gt;Stories are really just use cases&lt;/li&gt;
+  &lt;li&gt;Sprints are really just work&lt;/li&gt;
+  &lt;li&gt;Stand-ups are really just meetings&lt;/li&gt;
+  &lt;li&gt;Iterations are really just versions&lt;/li&gt;
+  &lt;li&gt;Backlogs are really just to do lists&lt;/li&gt;
+  &lt;li&gt;Backlog grooming is really just planning&lt;/li&gt;
+  &lt;li&gt;Burn-down charts are really just earned value charts&lt;/li&gt;
+  &lt;li&gt;Velocity is really just output&lt;/li&gt;
+  &lt;li&gt;And that tasks, in fact, are really just tasks.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://minifesto.org/&quot;&gt;Minifesto&lt;/a&gt; has got the following points:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fight for Pareto’s law, look for the 20% of effort that will give you the 80%
+of results.&lt;/li&gt;
+  &lt;li&gt;Prioritize, minimalism isn’t about not doing things but about focusing first
+in the important.&lt;/li&gt;
+  &lt;li&gt;Perfect is enemy of good, first do it, then do it right, then do it better.&lt;/li&gt;
+  &lt;li&gt;Kill the baby, don’t be afraid of starting all over again. Fail soon, learn
+fast.&lt;/li&gt;
+  &lt;li&gt;Add value. Think constantly how you can help your team and position yourself
+in that field/skill.&lt;/li&gt;
+  &lt;li&gt;Basics, first. Follow always a top-down thinking starting by the
+best-practises of CS.&lt;/li&gt;
+  &lt;li&gt;Think different. Simple is harder than complex, which means you’ll need to
+use your creativity.&lt;/li&gt;
+  &lt;li&gt;Synthesis is the key of communication. We have to write code for humans not
+machines.&lt;/li&gt;
+  &lt;li&gt;Keep it plain. Try to keep your designs with few layers of indirection.&lt;/li&gt;
+  &lt;li&gt;Clean kipple and redundancy. Minimalism is all about removing distractions.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, &lt;em&gt;stop following blindy a trend&lt;/em&gt; just because it’s cool or because everyone
+is using it or talking about it and start actually to find what really works for
+you.&lt;br /&gt;
+&lt;strong&gt;Don’t waste too much time and money on something that is not paying back.&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 22 Aug 2014 01:00:00 +0100</pubDate>
+        <link>http://blog.fabiocicerchia.it/being-really-agile-being-really-smart</link>
+        <guid isPermaLink="true">http://blog.fabiocicerchia.it/being-really-agile-being-really-smart</guid>
+        
+        <category>agile,</category>
+        
+        <category>waterfall,</category>
+        
+        <category>scrum,</category>
+        
+        <category>xp</category>
+        
+        
+        <category>methodologies</category>
+        
+      </item>
+    
+      <item>
+        <title>Branching Model: clean-up those repos</title>
+        <description>&lt;p&gt;Usually most rookie developers don’t use a VCS (Versioning Control System), like
+&lt;a href=&quot;https://subversion.apache.org/&quot;&gt;SVN&lt;/a&gt; or &lt;a href=&quot;http://git-scm.com/&quot;&gt;GIT&lt;/a&gt;, in this
+post I won’t talk about the benefits of using one. This post is dedicated to
+who’s already using a VCS without using a branching model.&lt;/p&gt;
+
+&lt;p&gt;So, what’s a branch? A branch is a &lt;strong&gt;separate development line&lt;/strong&gt;, where you or
+your team can work on to develop a single functionality or even an entire
+release.
+This line is separated from the rest in order not to mix unfinished
+functionalities and avoid to push them to the main line or deploy them in
+production.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://nvie.com/img/2009/12/bm002.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The solution is having two or more distinct lines (aka branches) so your team
+can work on those lines of development without interfering with each other.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://nvie.com/img/2009/12/Screen-shot-2009-12-24-at-11.32.03.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The images above are referring to the
+&lt;a href=&quot;http://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;Git Flow&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Generally, the common sense dictate to have the following branches:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;master / trunk&lt;/li&gt;
+  &lt;li&gt;development branches&lt;/li&gt;
+  &lt;li&gt;tags&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In git the tags are not actually physical branches like in SVN but just
+&lt;strong&gt;snapshots&lt;/strong&gt;, as what they are supposed to be.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;master&lt;/code&gt; / &lt;code&gt;trunk&lt;/code&gt; must have the &lt;strong&gt;stable version&lt;/strong&gt;, generally the latest
+version.&lt;br /&gt;
+It’s highly recommended to tag it in order to have an &lt;em&gt;archive&lt;/em&gt; of each deployed
+version (e.g. useful in case you need to &lt;em&gt;rollback&lt;/em&gt;).&lt;br /&gt;
+As suggestion the master contains only the stable version merged from the
+development branches, avoiding to commit direct into it keeps the history tidy
+and clean.&lt;br /&gt;
+The dev branches contain the &lt;strong&gt;unstable code&lt;/strong&gt; which is under development. Quite
+often it’s possible to have a branch for each version, in case of bug fixing or
+maintenance.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://juan.benet.ai/&quot;&gt;Juan Batiz-Benet&lt;/a&gt; created a
+&lt;a href=&quot;https://gist.github.com/jbenet/ee6c9ac48068889b0912&quot;&gt;gist&lt;/a&gt; in which he’s
+explaining this simple model, that I’m quite sure it’s used by many developers
+without even being aware of it.&lt;/p&gt;
+
+&lt;p&gt;There are several different branching model, and most of the time you are
+already using one.&lt;br /&gt;
+At the moment there are mainly two ones:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;Git Flow&lt;/a&gt;&lt;br /&gt;
+The general idea is to have several branches, each for a different purpose:
+&lt;code&gt;master&lt;/code&gt;, &lt;code&gt;develop&lt;/code&gt;, &lt;code&gt;feature&lt;/code&gt;, &lt;code&gt;release&lt;/code&gt;, and &lt;code&gt;hotfix&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://guides.github.com/introduction/flow/index.html&quot;&gt;GitHub Flow&lt;/a&gt;&lt;br /&gt;
+The general idea is just to have two branches: &lt;code&gt;master&lt;/code&gt; and descriptive
+branches for the functionalities you are working on.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I recommend to &lt;em&gt;start with a simple model&lt;/em&gt;, and then (only if you really need)
+move towards a &lt;em&gt;more complex one&lt;/em&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 08 Aug 2014 01:00:00 +0100</pubDate>
+        <link>http://blog.fabiocicerchia.it/branching-model-clean-up-those-repos</link>
+        <guid isPermaLink="true">http://blog.fabiocicerchia.it/branching-model-clean-up-those-repos</guid>
+        
+        <category>svn,</category>
+        
+        <category>git,</category>
+        
+        <category>branches,</category>
+        
+        <category>flow,</category>
+        
+        <category>tags,</category>
+        
+        <category>versioning</category>
+        
+        
+        <category>coding-standards</category>
+        
+      </item>
+    
+      <item>
+        <title>Versioning Numbers, make them meaningful</title>
+        <description>&lt;p&gt;The version number itself, and more generally the way you manage it, is most of
+the time &lt;em&gt;underestimated&lt;/em&gt;, because it’s considered something &lt;em&gt;trivial&lt;/em&gt;.&lt;br /&gt;
+It is used to give a chronological order to the software releases and it conveys
+the useful information about the &lt;strong&gt;state&lt;/strong&gt; and the &lt;strong&gt;impact&lt;/strong&gt; of the release.&lt;/p&gt;
+
+&lt;p&gt;I can think only of two major way to assign a version number:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;MAJOR.MINOR.PATCH[-STABILITY]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;YEAR.MONTH.DAY&lt;/code&gt; &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Obviously there are several ways of customising those to your own needs, and you
+can find everywhere different, non-standard, version numbers every day being
+used.&lt;/p&gt;
+
+&lt;p&gt;But, personally, I prefer the following structure and I’d recommend it to
+everyone:&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;MAJOR.MINOR.PATCH[-STABILITY]&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;And apparently there is even a &lt;a href=&quot;http://semver.org/&quot;&gt;manifesto&lt;/a&gt; for this
-versioning type.&lt;/p&gt;
 
 &lt;p&gt;The rules are quite straight-forward:&lt;/p&gt;
 
@@ -49,29 +217,30 @@ versioning type.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Usually I never bother to use &lt;code&gt;alpha&lt;/code&gt; and &lt;code&gt;beta&lt;/code&gt; because they are so unstable
-and so frequently updated that it’s not worth the time to create a tag, I’d
-rather release a &lt;code&gt;dev&lt;/code&gt; one.&lt;/p&gt;
+and so frequently updated that it’s not worth the time to create a tag and
+release it, I’d rather release a &lt;code&gt;dev&lt;/code&gt; one.&lt;/p&gt;
 
-&lt;p&gt;This could be a solution to avoid problems when deciding which version to use.
-This kind of confusion is on the end-user, and the end-user who cares most about
-those version numbers quite often is the developer who needs to use a certain
-library.&lt;/p&gt;
+&lt;p&gt;I also found out that there is even a &lt;strong&gt;&lt;a href=&quot;http://semver.org/&quot;&gt;manifesto&lt;/a&gt;&lt;/strong&gt; for
+the versioning scheme I’m using and promoting.&lt;/p&gt;
 
-&lt;p&gt;Still this doesn’t mean you can’t get confused by your own versioning number
-scheme &lt;i class=&quot;fa fa-smile-o&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;However, this is not preventing you anyhow to assign to your release a codename.&lt;/p&gt;
 
-&lt;p&gt;If you use non-sequential numbers make sure it’s clear which one come first, the
-first example that I can think of could be Windows ME and Windows 2000:
-do you know which one is the most recent one?&lt;br /&gt;
-A solution could be the versioning system that Canonical is using for Ubuntu:
-&lt;code&gt;YY.MM&lt;/code&gt; (&lt;code&gt;year.month&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;This could be a solution to avoid problems when &lt;em&gt;deciding which version to use&lt;/em&gt;,
+recognising at first glance if the release is &lt;strong&gt;stable&lt;/strong&gt; or not, and especially
+be aware whether it’s &lt;strong&gt;backward-compatible&lt;/strong&gt;.&lt;br /&gt;
+Still, &lt;em&gt;do not ever trust blindly an external dependency&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;We can see everything as a courtesy we can do each other to make our lives
-easier.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/List_of_Ubuntu_releases&quot;&gt;Ubuntu&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 </description>
-        <pubDate>Tue, 22 Jul 2014 01:00:00 +0100</pubDate>
-        <link>http://blog.fabiocicerchia.it/versioning-numbers-let-em-be-semantic</link>
-        <guid isPermaLink="true">http://blog.fabiocicerchia.it/versioning-numbers-let-em-be-semantic</guid>
+        <pubDate>Fri, 25 Jul 2014 01:00:00 +0100</pubDate>
+        <link>http://blog.fabiocicerchia.it/versioning-numbers-make-them-meaningful</link>
+        <guid isPermaLink="true">http://blog.fabiocicerchia.it/versioning-numbers-make-them-meaningful</guid>
         
         <category>software</category>
         
@@ -85,12 +254,11 @@ easier.&lt;/p&gt;
       </item>
     
       <item>
-        <title>JS Events: how to get all of them</title>
-        <description>&lt;p&gt;The main problem is because of the way the browser manage the events.&lt;/p&gt;
-
-&lt;p&gt;I’ve developed this plain JS class because I was facing a huge problem while
-working on &lt;a href=&quot;http://salmonjs.org&quot;&gt;salmonJS&lt;/a&gt;. I was trying to collect all the
-events bound to the DOM elements.&lt;/p&gt;
+        <title>Retrieve JS Events: how to get all of them</title>
+        <description>&lt;p&gt;I was trying face an apparently huge problem, collect all the events &lt;strong&gt;bound&lt;/strong&gt;
+to the DOM elements.
+Then I realised that the main &lt;em&gt;obstacle&lt;/em&gt; was the &lt;em&gt;browser&lt;/em&gt;, yes the browser.&lt;br /&gt;
+Because of the way the browser manage the events.&lt;/p&gt;
 
 &lt;p&gt;So I started my research about it, nothing came from Google or StackOverflow.&lt;/p&gt;
 
@@ -115,14 +283,21 @@ implementation in any browser today.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;The last 2 are not possible to be retrieved without some workounds because they
-are handled internally by the browser and there is no trace in the DOM of those.&lt;/p&gt;
+are &lt;strong&gt;handled internally&lt;/strong&gt; by the browser and they don’t leave any trace in the
+DOM.&lt;/p&gt;
 
-&lt;p&gt;This is my personal solution to this problem, overriding the default behaviour
-at the beginning of the page load, so nothing else can try to bind an event
-before initialise the “interceptor”.&lt;/p&gt;
+&lt;p&gt;I’ve developed a &lt;em&gt;plain JS class&lt;/em&gt; while I was facing this problem when
+working on my own project &lt;strong&gt;&lt;a href=&quot;http://salmonjs.org&quot;&gt;salmonJS&lt;/a&gt;&lt;/strong&gt;, a &lt;em&gt;web
+spider&lt;/em&gt; which is using &lt;em&gt;PhantomJS&lt;/em&gt; and &lt;em&gt;Node.js&lt;/em&gt;.
+So I came with this solution which seems to be the most appropriate one to run on
+PhantomJS (and I believe it works fine with &lt;em&gt;CasperJS&lt;/em&gt; as well).&lt;/p&gt;
 
-&lt;p&gt;There is nothing to be configured to make it working, just include it in your page
-before EVERYTHING else.&lt;/p&gt;
+&lt;p&gt;My personal approach was &lt;strong&gt;overriding the default behaviour&lt;/strong&gt; at the beginning
+of the page load, so nothing else can try to bind an event before initialise the
+“interceptor”.&lt;/p&gt;
+
+&lt;p&gt;There is nothing that needs to be configured to make it working, just include it
+in your page before EVERYTHING else.&lt;/p&gt;
 
 &lt;p&gt;You can collect at any time the events just calling:&lt;/p&gt;
 
@@ -132,8 +307,8 @@ before EVERYTHING else.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 03 Dec 2013 11:23:00 +0000</pubDate>
-        <link>http://blog.fabiocicerchia.it/js-events-how-to-get-all-of-them</link>
-        <guid isPermaLink="true">http://blog.fabiocicerchia.it/js-events-how-to-get-all-of-them</guid>
+        <link>http://blog.fabiocicerchia.it/retrieve-js-events-how-to-get-all-of-them</link>
+        <guid isPermaLink="true">http://blog.fabiocicerchia.it/retrieve-js-events-how-to-get-all-of-them</guid>
         
         <category>javascript</category>
         
@@ -152,23 +327,23 @@ before EVERYTHING else.&lt;/p&gt;
     
       <item>
         <title>Browser Fingerprinting: There&#39;s no place where you can hide</title>
-        <description>&lt;p&gt;&lt;a href=&quot;https://www.eff.org/&quot;&gt;EFF&lt;/a&gt;, The Electronic Frontier Foundation, did a research
-about the users’ privacy and how it is possible to identify the user in a quite
-unique way.&lt;br /&gt;
-The concept is based on gathering as much information as possible, like user
+        <description>&lt;p&gt;The &lt;a href=&quot;https://www.eff.org/&quot;&gt;EFF&lt;/a&gt;, The Electronic Frontier Foundation, did a
+research about the &lt;em&gt;users’ privacy&lt;/em&gt; and how it is possible to &lt;strong&gt;identify the
+user&lt;/strong&gt; in a quite unique way.&lt;br /&gt;
+The concept is based on &lt;strong&gt;gathering as much information as possible&lt;/strong&gt;, like user
 agent (browser and version), resolution, plugins installed, timezone, language,
 and so on to create a message digest to identify the user / user’s device in an
 accurate way.&lt;/p&gt;
 
-&lt;p&gt;This means that disabling the cookies is not enough to avoid this kind of
+&lt;p&gt;This means that &lt;strong&gt;disabling the cookies is not enough&lt;/strong&gt; to avoid this kind of
 identification.
-So you can still be a target of web tracking, mainly for marketing and
+So you can still be a target of &lt;em&gt;web tracking&lt;/em&gt;, mainly for marketing and
 commercial purposes.&lt;/p&gt;
 
 &lt;p&gt;The full article is available at “&lt;a href=&quot;https://www.eff.org/deeplinks/2010/01/primer-information-theory-and-privacy&quot;&gt;A Primer on Information Theory and Privacy&lt;/a&gt;”.&lt;/p&gt;
 
 &lt;p&gt;So fascinated by this experiment I’ve tried to create just for fun something
-similar to generate a “unique” fingerprint.&lt;/p&gt;
+similar to generate a &lt;strong&gt;“unique” fingerprint&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can test my version on &lt;a href=&quot;http://jsfiddle.net/fabiocicerchia/P9Rd9/&quot;&gt;&lt;i class=&quot;fa fa-jsfiddle&quot;&gt;&lt;/i&gt; JSFiddle&lt;/a&gt;.&lt;/p&gt;
 
@@ -176,9 +351,9 @@ similar to generate a “unique” fingerprint.&lt;/p&gt;
 
 &lt;script src=&quot;https://gist.github.com/fabiocicerchia/6775541.js&quot;&gt; &lt;/script&gt;
 
-&lt;p&gt;But if you only think all the information the Google has got during the years
-based on what you have done on Internet, it’s enough to track and predict your
-behaviour without too many problems.&lt;/p&gt;
+&lt;p&gt;But if you only think all the information the &lt;strong&gt;Google&lt;/strong&gt; has got during the years
+based on what you have done on Internet, it’s enough to &lt;strong&gt;track and predict your
+behaviour&lt;/strong&gt; without too many problems.&lt;/p&gt;
 </description>
         <pubDate>Tue, 01 Oct 2013 10:41:00 +0100</pubDate>
         <link>http://blog.fabiocicerchia.it/browser-fingerprinting-there-s-no-place-where-you-can-hide</link>
