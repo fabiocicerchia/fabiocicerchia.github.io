@@ -2,13 +2,13 @@
   font-family: 'Imprima';
   font-style: normal;
   font-weight: 400;
-  src: local('Imprima'), local('Imprima-Regular'), url(http://fonts.gstatic.com/s/imprima/v3/tkNzYFRCxmx7lNs3nUuZfw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/imprima/v3/Lw4J4XiH21tNmX0DzARuSA.woff) format('woff');
+  src: local('Imprima'), local('Imprima-Regular'), url('https://fonts.gstatic.com/s/imprima/v3/tkNzYFRCxmx7lNs3nUuZfw.woff2') format('woff2'), url('https://fonts.gstatic.com/s/imprima/v3/Lw4J4XiH21tNmX0DzARuSA.woff') format('woff');
 }
 @font-face {
   font-family: 'Bree Serif';
   font-style: normal;
   font-weight: 400;
-  src: local('Bree Serif'), local('BreeSerif-Regular'), url(http://themes.googleusercontent.com/static/fonts/breeserif/v3/LQ7WLTaITDg4OSRuOZCpsxsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+  src: local('Bree Serif'), local('BreeSerif-Regular'), url('https://themes.googleusercontent.com/static/fonts/breeserif/v3/LQ7WLTaITDg4OSRuOZCpsxsxEYwM7FgeyaSgU71cLG0.woff') format('woff');
 }
 @import url(font-awesome.css);
 
@@ -43,9 +43,6 @@ a {
 }
 a:hover, a:hover * {
   text-decoration: underline;
-}
-a:visited {
-  color: #205caa;
 }
 /* Utility */
  .wrap:before, .wrap:after {

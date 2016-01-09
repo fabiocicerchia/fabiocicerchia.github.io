@@ -23,7 +23,10 @@ mentoring developers.** I do like **refactoring** (sometimes just to improve
 either performance or scalability), **documentation** (not only about code), and
 **testing** that are anything but boring.
 
-Lately I've been involved in the learning, either for fun or work of _Node.js_,
-_Doctrine 2_, _MongoDB_, _Puppet_, _Redis_, _Symfony 2_, _Vagrant_, _XPath_ and
-_Zend Framework_, and I'm going to start with _Arduino_, _Cacti_, _Raspberry Pi_
-and _mod_pagespeed_.
+I like spending my "spare" time doing some coding stuff, and so far no-one
+managed to let me give up on that, sorry not possible.
+
+I currently live in Rome, where I work as Senior Developer for Immobiliare.it,
+Italy's N.1 real estate website. I'm enjoying every single challenge I face, no
+matter how stressful is I put all the effort to give the best solution I can
+possible make.

@@ -9,7 +9,8 @@
     <meta property="og:title" content="{{ page_title }}" />
     <meta name="twitter:title" content="{{ page_title }}" />
 
-    {% capture page_description %}{% if page.title %}{{ page.excerpt | strip_html | trim | strip_newlines }}{% else %}{{ site.description | strip_html | trim }}{%endif %}{% endcapture %}
+    {% capture page_description %}{% if page.title %}{{ page.excerpt | strip_html | trim | strip_newlines }}{% else %}{{ site.description | strip_html | trim }}{% endif %}{% endcapture %}
+    {% capture page_description %}{% if page_description != "" %}{{ page_description }}{% else %}{{ page.title | strip_html | trim | strip_newlines }}{% endif %}{% endcapture %}
     <meta name="description" content="{{ page_description }}" />
     <meta name="dcterms.description" content="{{ page_description }}" />
     <meta property="og:description" content="{{ page_description }}" />
