@@ -8,9 +8,9 @@ comments:   true
 permalink:  retrieve-js-events-how-to-get-all-of-them
 ---
 
-I was trying face an apparently huge problem, collect all the events bound to
-the DOM elements.  
-Then I realised that the main obstacle was the browser, yes the browser.  
+I was trying face an apparently huge problem, collect all the events **bound**
+to the DOM elements.
+Then I realised that the main _obstacle_ was the _browser_, yes the browser.  
 Because of the way the browser manage the events.
 
 So I started my research about it, nothing came from Google or StackOverflow.
@@ -32,17 +32,18 @@ There are few ways to bind an event we should focus on:
  * [`element.attachEvent`](http://msdn.microsoft.com/en-us/library/ie/ms536343(v=vs.85).aspx)
 
 The last 2 are not possible to be retrieved without some workounds because they
-are handled internally by the browser and they don't leave any trace in the DOM.
+are **handled internally** by the browser and they don't leave any trace in the
+DOM.
 
-So I've developed a plain JS class because I was facing this problem while
-working on [salmonJS](http://salmonjs.org), a js-compatible web spider.
-I was working with PhantomJS (and I believe it works fine with CasperJS as
-well) and I came with this solution which seems to be the most appropriate one.
+I've developed a _plain JS class_ while I was facing this problem when
+working on my own project **[salmonJS](http://salmonjs.org)**, a _web
+spider_ which is using _PhantomJS_ and _Node.js_.
+So I came with this solution which seems to be the most appropriate one to run on
+PhantomJS (and I believe it works fine with _CasperJS_ as well).
 
-My personal approach to that was overriding the default behaviour at the
-beginning of the page load, so nothing else can try to bind an event before
-initialise the "interceptor".
-
+My personal approach was **overriding the default behaviour** at the beginning
+of the page load, so nothing else can try to bind an event before initialise the
+"interceptor".
 
 There is nothing that needs to be configured to make it working, just include it
 in your page before EVERYTHING else.

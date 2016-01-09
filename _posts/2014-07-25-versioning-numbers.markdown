@@ -9,9 +9,9 @@ permalink:  versioning-numbers-make-them-meaningful
 ---
 
 The version number itself, and more generally the way you manage it, is most of
-the time underestimated, because it's considered something trivial.  
+the time _underestimated_, because it's considered something _trivial_.  
 It is used to give a chronological order to the software releases and it conveys
-the useful information about the state and the impact of the release.
+the useful information about the **state** and the **impact** of the release.
 
 I can think only of two major way to assign a version number:
 
@@ -42,14 +42,14 @@ Usually I never bother to use `alpha` and `beta` because they are so unstable
 and so frequently updated that it's not worth the time to create a tag and
 release it, I'd rather release a `dev` one.
 
-I also found out that there is even a [manifesto](http://semver.org/) for the
-versioning scheme I'm using and promoting.
+I also found out that there is even a **[manifesto](http://semver.org/)** for
+the versioning scheme I'm using and promoting.
 
 However, this is not preventing you anyhow to assign to your release a codename.
 
-This could be a solution to avoid problems when deciding which version to use,
-recognising at first glance if the release is stable or not, and especially
-be aware whether it's backward-compatible.  
-Still, do not ever trust blindly an external dependency.
+This could be a solution to avoid problems when _deciding which version to use_,
+recognising at first glance if the release is **stable** or not, and especially
+be aware whether it's **backward-compatible**.  
+Still, _do not ever trust blindly an external dependency_.
 
 [^1]: [Ubuntu](http://en.wikipedia.org/wiki/List_of_Ubuntu_releases)
